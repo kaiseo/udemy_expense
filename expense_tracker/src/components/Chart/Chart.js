@@ -3,8 +3,10 @@ import './Chart.css';
 
 const Chart = (props) => {
     const dataPointValues = props.dataPoints.map(dataPoint => dataPoint.value);
+    //spread all the data point values 
     const totalMaximum = Math.max(...dataPointValues);
 
+    //return the accumulated points mapped
   return (
     <div className="chart">
       {props.dataPoints.map(dataPoint=> (

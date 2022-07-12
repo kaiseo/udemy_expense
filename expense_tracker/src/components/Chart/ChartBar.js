@@ -2,10 +2,10 @@ import "./ChartBar.css";
 
 const ChartBar = (props) => {
   //calculate chart bar fill
-
+  //bar-fill-height: start from 0;
   let barFillHeight = "0%";
-
-  if (props.max > 0) {
+  //if max value is greater than 0, round the value
+  if (props.maxValue > 0) {
     barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
   }
 

@@ -4,13 +4,6 @@ import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
   // //directly inside the react components. re-render the state of a certain component after detecting any change.
-  // const [title, setTitle] = useState(props.title);
-  // //console.log("ExpenseItem evaluated by React!");
-  
-  // const clickHanlder = () => {
-  //   setTitle("Updated!");
-  //   console.log(title);
-  // };
 
   return (
     <Card className="expense-item">
